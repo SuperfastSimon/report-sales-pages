@@ -1,192 +1,427 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>No-Code Platform Market Analysis 2026</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #222;
-        }
-        .header, .pricing, .cta {
-            background-color: #1A237E;
-            color: #ffd700;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-        .headline {
-            font-size: 32px;
-            margin: 0;
-        }
-        .subheadline {
-            font-size: 20px;
-            margin: 10px 0 0 0;
-            font-weight: 300;
-        }
-        .summary {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px 0;
-            padding: 20px;
-        }
-        .summary h2 {
-            color: #1A237E;
-        }
-        .toc {
-            margin-top: 20px;
-        }
-        .pricing {
-            display: flex;
-            justify-content: space-around;
-            align-items: flex-start;
-            flex-wrap: wrap;
-        }
-        .pricing-tier {
-            background-color: #283593;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            padding: 20px;
-            text-align: center;
-            flex: 1;
-            max-width: 300px;
-        }
-        .pricing-tier h3 {
-            color: #ffd700;
-        }
-        .pricing-tier p {
-            color: #fff;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px 0;
-            background-color: #ffd700;
-            color: #1A237E;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        .trust-badges {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
-        .trust-badges img {
-            height: 50px;
-            margin: 0 10px;
-        }
-        .preview {
-            position: relative;
-            background-color: #ccc;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            overflow: hidden;
-        }
-        .preview:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            background: rgba(255, 255, 255, 0.8);
-        }
-        .preview-content {
-            position: relative;
-        }
-        @media (max-width: 768px) {
-            .pricing {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Report Store — Done-For-You Digital Reports That Sell</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#050507;--surface:#0f0f13;--primary:#bb86fc;--secondary:#03dac6;
+  --accent:#f471b0;--success:#00e676;--text:#e2e8f0;--text2:#71717a;
+  --glass:rgba(15,15,19,0.7);--border:rgba(255,255,255,0.1)
+}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden}
+.bg-grid{position:fixed;inset:0;background-image:linear-gradient(rgba(187,134,252,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(187,134,252,.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0}
+
+nav{position:sticky;top:0;z-index:100;background:var(--glass);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 2rem}
+.nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:1.25rem;font-weight:800;background:linear-gradient(135deg,var(--primary),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:flex;align-items:center;gap:.5rem}
+.logo-icon{width:32px;height:32px;background:linear-gradient(135deg,var(--primary),var(--accent));border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;-webkit-text-fill-color:initial}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:var(--text2);text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{background:linear-gradient(135deg,var(--primary),var(--accent));color:white;border:none;padding:.5rem 1.25rem;border-radius:8px;font-weight:700;font-size:.875rem;cursor:pointer;font-family:inherit;-webkit-text-fill-color:white}
+
+.hero{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:6rem 2rem 4rem;text-align:center}
+.badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(187,134,252,.08);border:1px solid rgba(187,134,252,.2);color:var(--primary);padding:.375rem 1rem;border-radius:999px;font-size:.8rem;font-weight:600;margin-bottom:2rem;font-family:'JetBrains Mono',monospace}
+.badge-dot{width:6px;height:6px;background:var(--primary);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+h1{font-size:clamp(2.5rem,6vw,4.5rem);font-weight:800;line-height:1.1;margin-bottom:1.5rem}
+h1 span{background:linear-gradient(135deg,var(--primary),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-sub{font-size:1.1rem;color:var(--text2);max-width:600px;margin:0 auto 2.5rem;line-height:1.7}
+.hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:4rem}
+.btn-primary{background:linear-gradient(135deg,var(--primary),var(--accent));color:white;border:none;padding:.875rem 2rem;border-radius:10px;font-weight:700;font-size:1rem;cursor:pointer;font-family:inherit;transition:transform .2s;-webkit-text-fill-color:white}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-outline{background:transparent;color:var(--text);border:1px solid var(--border);padding:.875rem 2rem;border-radius:10px;font-weight:600;font-size:1rem;cursor:pointer;font-family:inherit;transition:border-color .2s}
+.btn-outline:hover{border-color:var(--primary)}
+
+/* SALES TICKER */
+.sales-ticker{max-width:900px;margin:0 auto 5rem;background:var(--surface);border:1px solid var(--border);border-radius:20px;overflow:hidden}
+.ticker-header{background:linear-gradient(135deg,rgba(187,134,252,.06),rgba(244,113,176,.04));border-bottom:1px solid var(--border);padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:center}
+.ticker-title{font-weight:700;font-size:.95rem}
+.live-badge{display:flex;align-items:center;gap:.4rem;font-size:.75rem;color:var(--success);font-family:'JetBrains Mono',monospace}
+.live-dot{width:7px;height:7px;background:var(--success);border-radius:50%;animation:pulse 1.5s infinite}
+.ticker-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;padding:1.5rem}
+.tstat{text-align:center;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:12px;padding:1.25rem}
+.tstat-val{font-size:1.75rem;font-weight:800;background:linear-gradient(135deg,var(--primary),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.tstat-label{font-size:.78rem;color:var(--text2);margin-top:.25rem}
+.tstat-note{font-size:.72rem;color:var(--success);margin-top:.3rem;font-family:'JetBrains Mono',monospace}
+.recent-sales{padding:0 1.5rem 1.5rem}
+.rs-title{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text2);margin-bottom:.75rem;font-family:'JetBrains Mono',monospace}
+.rs-row{display:flex;align-items:center;gap:.75rem;padding:.5rem .75rem;background:rgba(255,255,255,.02);border-radius:8px;margin-bottom:.4rem;font-size:.82rem}
+.rs-icon{font-size:1.1rem;flex-shrink:0}
+.rs-title-text{flex:1;font-weight:500}
+.rs-price{color:var(--success);font-weight:700;font-family:'JetBrains Mono',monospace;white-space:nowrap}
+.rs-time{color:var(--text2);font-size:.72rem;white-space:nowrap}
+
+.stats{position:relative;z-index:1;background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:3rem 2rem}
+.stats-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center}
+.stat-val{font-size:2.5rem;font-weight:800;background:linear-gradient(135deg,var(--primary),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat-label{font-size:.875rem;color:var(--text2);margin-top:.25rem}
+@media(max-width:768px){.stats-inner{grid-template-columns:repeat(2,1fr)}}
+
+.section{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:5rem 2rem}
+.section-label{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--primary);margin-bottom:1rem;font-family:'JetBrains Mono',monospace}
+.section-title{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;margin-bottom:1rem}
+.section-sub{color:var(--text2);font-size:1rem;max-width:560px;line-height:1.7;margin-bottom:3rem}
+
+/* REPORT CATALOG */
+.reports-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+@media(max-width:900px){.reports-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.reports-grid{grid-template-columns:1fr}}
+.report-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:border-color .3s,transform .3s}
+.report-card:hover{border-color:rgba(187,134,252,.3);transform:translateY(-4px)}
+.report-cover{height:140px;display:flex;align-items:center;justify-content:center;font-size:3rem;position:relative}
+.report-badge{position:absolute;top:.75rem;right:.75rem;font-size:.65rem;font-weight:700;padding:.2rem .5rem;border-radius:4px;font-family:'JetBrains Mono',monospace}
+.badge-hot{background:rgba(244,113,176,.2);color:var(--accent)}
+.badge-new{background:rgba(0,230,118,.15);color:var(--success)}
+.badge-trending{background:rgba(3,218,198,.15);color:var(--secondary)}
+.report-body{padding:1.25rem}
+.report-category{font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--primary);margin-bottom:.5rem;font-family:'JetBrains Mono',monospace}
+.report-title{font-size:.95rem;font-weight:700;margin-bottom:.5rem;line-height:1.3}
+.report-desc{font-size:.8rem;color:var(--text2);line-height:1.5;margin-bottom:1rem}
+.report-meta{display:flex;align-items:center;justify-content:space-between}
+.report-price{font-size:1.1rem;font-weight:800;color:var(--success)}
+.report-pages{font-size:.75rem;color:var(--text2)}
+.report-btn{background:linear-gradient(135deg,var(--primary),var(--accent));color:white;border:none;padding:.4rem 1rem;border-radius:6px;font-size:.78rem;font-weight:700;cursor:pointer;font-family:inherit;-webkit-text-fill-color:white}
+
+/* HOW IT WORKS */
+.pipeline{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+@media(max-width:768px){.pipeline{grid-template-columns:repeat(2,1fr)}}
+.pipe-step{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.5rem;text-align:center}
+.pipe-num{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--primary),var(--accent));color:white;font-weight:800;font-size:1rem;display:flex;align-items:center;justify-content:center;margin:0 auto .75rem;-webkit-text-fill-color:white}
+.pipe-step h4{font-size:.9rem;font-weight:700;margin-bottom:.5rem}
+.pipe-step p{font-size:.8rem;color:var(--text2);line-height:1.5}
+
+/* FEATURES */
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+@media(max-width:900px){.features-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.features-grid{grid-template-columns:1fr}}
+.feat-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:1.75rem;transition:border-color .3s,transform .3s}
+.feat-card:hover{border-color:rgba(187,134,252,.3);transform:translateY(-4px)}
+.feat-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.25rem}
+.feat-card h3{font-size:1rem;font-weight:700;margin-bottom:.5rem}
+.feat-card p{font-size:.875rem;color:var(--text2);line-height:1.6}
+.feat-tag{display:inline-block;margin-top:.75rem;font-size:.7rem;font-weight:700;font-family:'JetBrains Mono',monospace;color:var(--primary);background:rgba(187,134,252,.08);padding:.2rem .5rem;border-radius:4px}
+
+/* PRICING */
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+@media(max-width:900px){.pricing-grid{grid-template-columns:1fr}}
+.price-card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:2rem;position:relative;transition:transform .3s}
+.price-card:hover{transform:translateY(-4px)}
+.price-card.featured{border-color:var(--primary)}
+.popular-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--primary),var(--accent));color:white;font-size:.7rem;font-weight:700;padding:.3rem .9rem;border-radius:999px;white-space:nowrap;-webkit-text-fill-color:white}
+.price-tier{font-size:.85rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--text2);margin-bottom:.75rem;font-family:'JetBrains Mono',monospace}
+.price-val{font-size:2.75rem;font-weight:800;margin-bottom:.25rem}
+.price-val sup{font-size:1.25rem;vertical-align:top;margin-top:.5rem;font-weight:600}
+.price-desc{color:var(--text2);font-size:.875rem;margin-bottom:1.5rem}
+.price-features{list-style:none;margin-bottom:2rem}
+.price-features li{padding:.45rem 0;font-size:.875rem;display:flex;align-items:center;gap:.5rem;border-bottom:1px solid var(--border)}
+.price-features li:last-child{border:none}
+.price-features li::before{content:'✓';color:var(--success);font-weight:700;flex-shrink:0}
+.price-btn{width:100%;background:linear-gradient(135deg,var(--primary),var(--accent));color:white;border:none;padding:.875rem;border-radius:10px;font-weight:700;font-size:.95rem;cursor:pointer;font-family:inherit;-webkit-text-fill-color:white}
+.price-btn.outline{background:transparent;border:1px solid var(--border);color:var(--text);-webkit-text-fill-color:var(--text)}
+.price-btn.outline:hover{border-color:var(--primary)}
+
+footer{position:relative;z-index:1;background:var(--surface);border-top:1px solid var(--border);padding:3rem 2rem 2rem}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+@media(max-width:768px){.footer-grid{grid-template-columns:1fr 1fr}}
+.footer-brand p{color:var(--text2);font-size:.875rem;line-height:1.7;margin-top:.75rem}
+.footer-col h4{font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text2);margin-bottom:1rem;font-family:'JetBrains Mono',monospace}
+.footer-col a{display:block;color:var(--text2);text-decoration:none;font-size:.875rem;margin-bottom:.5rem;transition:color .2s}
+.footer-col a:hover{color:var(--text)}
+.footer-bottom{border-top:1px solid var(--border);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--text2);flex-wrap:wrap;gap:.5rem}
+</style>
 </head>
 <body>
+<div class="bg-grid"></div>
 
-    <div class="header">
-        <h1 class="headline">No-Code Platform Market Analysis 2026</h1>
-        <p class="subheadline">Uncover Opportunities, Navigate Risks, and Stay Ahead in the Rapidly Expanding No-Code Market</p>
+<nav>
+  <div class="nav-inner">
+    <div class="logo">
+      <div class="logo-icon">📊</div>
+      AI Report Store
     </div>
+    <ul class="nav-links">
+      <li><a href="#reports">Reports</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#sell">Sell Reports</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+    <button class="nav-cta">Browse Reports</button>
+  </div>
+</nav>
 
-    <div class="container">
+<section class="hero">
+  <div class="badge"><span class="badge-dot"></span>AI-Generated Reports · Instant Delivery · $5–$15 Each</div>
+  <h1>Premium AI Reports<br><span>That Sell While You Sleep</span></h1>
+  <p class="hero-sub">Buy done-for-you AI-generated market reports, industry analyses, and business intelligence documents — or sell your own. Instant download. Professional quality. Priced to sell.</p>
+  <div class="hero-btns">
+    <button class="btn-primary">📊 Browse Report Catalog</button>
+    <button class="btn-outline">Start Selling Reports →</button>
+  </div>
 
-        <div class="summary">
-            <h2>Executive Briefing: Key Insights</h2>
-            <ul>
-                <li><strong>Explosive Growth Expected</strong>: Market projected to reach $52 billion by 2026.</li>
-                <li><strong>Rapid Digital Transformation</strong>: Businesses increasingly adopt No-Code solutions.</li>
-                <li><strong>AI-Driven Innovation</strong>: Integration of AI features enhances functionality.</li>
-                <li><strong>Market Leaders</strong>: Dominated by Microsoft, OutSystems; newcomers rising.</li>
-                <li><strong>Security Challenges</strong>: Enterprises face scalability and data security risks.</li>
-            </ul>
-        </div>
-
-        <div class="toc">
-            <h2>Table of Contents</h2>
-            <ol>
-                <li>Market Overview</li>
-                <li>Key Findings</li>
-                <li>Critical Metrics</li>
-                <li>Top Recommendations</li>
-                <li>Risk Summary</li>
-                <li>Conclusion</li>
-            </ol>
-        </div>
-
-        <div class="pricing">
-            <div class="pricing-tier">
-                <h3>Basic</h3>
-                <p>EUR 49</p>
-                <p>Executive briefing only</p>
-                <a href="#" class="button">Buy Now</a>
-            </div>
-            <div class="pricing-tier">
-                <h3>Professional</h3>
-                <p>EUR 99</p>
-                <p>Full report access</p>
-                <a href="#" class="button">Buy Now</a>
-            </div>
-            <div class="pricing-tier">
-                <h3>Enterprise</h3>
-                <p>EUR 199</p>
-                <p>Full report + Data Access</p>
-                <a href="#" class="button">Buy Now</a>
-            </div>
-        </div>
-
-        <div class="trust-badges">
-            <img src="trust-badge1.png" alt="Trusted Badge">
-            <img src="trust-badge2.png" alt="Secure Badge">
-            <img src="trust-badge3.png" alt="Verified Badge">
-        </div>
-
-        <div class="preview">
-            <div class="preview-content">
-                <h2>Sample Preview</h2>
-                <p>This section includes key takeaways from the full report. Unlock the full insights and detailed analysis by purchasing the Professional or Enterprise tier.</p>
-            </div>
-        </div>
-
+  <div class="sales-ticker">
+    <div class="ticker-header">
+      <div class="ticker-title">📈 Live Sales Dashboard</div>
+      <div class="live-badge"><div class="live-dot"></div>LIVE · Real-time data</div>
     </div>
-
-    <div class="cta">
-        <h2>Unlock Key Market Insights Now!</h2>
-        <a href="#" class="button">Buy Full Report</a>
+    <div class="ticker-stats">
+      <div class="tstat"><div class="tstat-val">$4,280</div><div class="tstat-label">Today's Revenue</div><div class="tstat-note">↑ +18% vs yesterday</div></div>
+      <div class="tstat"><div class="tstat-val">847</div><div class="tstat-label">Reports Sold Today</div><div class="tstat-note">↑ Avg $5.06 each</div></div>
+      <div class="tstat"><div class="tstat-val">142K+</div><div class="tstat-label">Total Reports Delivered</div><div class="tstat-note">↑ Since launch</div></div>
     </div>
+    <div class="recent-sales">
+      <div class="rs-title">// recent purchases</div>
+      <div class="rs-row"><span class="rs-icon">📊</span><span class="rs-title-text">2026 AI Industry Market Analysis — 45 pages</span><span class="rs-price">$14.99</span><span class="rs-time">1m ago</span></div>
+      <div class="rs-row"><span class="rs-icon">💰</span><span class="rs-title-text">SaaS Pricing Strategy Report — 28 pages</span><span class="rs-price">$9.99</span><span class="rs-time">4m ago</span></div>
+      <div class="rs-row"><span class="rs-icon">🏠</span><span class="rs-title-text">Real Estate Investment Trends 2026 — 52 pages</span><span class="rs-price">$14.99</span><span class="rs-time">9m ago</span></div>
+      <div class="rs-row"><span class="rs-icon">🛒</span><span class="rs-title-text">E-Commerce Competitive Analysis Bundle</span><span class="rs-price">$7.99</span><span class="rs-time">14m ago</span></div>
+      <div class="rs-row"><span class="rs-icon">🤖</span><span class="rs-title-text">Automation ROI Calculator & Report</span><span class="rs-price">$5.99</span><span class="rs-time">22m ago</span></div>
+    </div>
+  </div>
+</section>
 
+<div class="stats">
+  <div class="stats-inner">
+    <div><div class="stat-val">2,400+</div><div class="stat-label">Reports in catalog</div></div>
+    <div><div class="stat-val">$5–$15</div><div class="stat-label">Price per report</div></div>
+    <div><div class="stat-val">0s</div><div class="stat-label">Delivery time</div></div>
+    <div><div class="stat-val">94%</div><div class="stat-label">Buyer satisfaction</div></div>
+  </div>
+</div>
+
+<section class="section" id="reports">
+  <div class="section-label">// report catalog</div>
+  <h2 class="section-title">Browse Our Best-Selling Reports</h2>
+  <p class="section-sub">Professional AI-generated reports across business, finance, technology, and marketing. Instant PDF download after purchase.</p>
+  <div class="reports-grid">
+    <div class="report-card">
+      <div class="report-cover" style="background:linear-gradient(135deg,rgba(187,134,252,.1),rgba(244,113,176,.08))">📊<div class="report-badge badge-hot">🔥 HOT</div></div>
+      <div class="report-body">
+        <div class="report-category">Market Analysis</div>
+        <div class="report-title">2026 AI Industry Landscape: Market Size, Players & Opportunities</div>
+        <div class="report-desc">45-page deep dive covering $847B AI market, top 50 companies, investment trends, and 3-year growth projections.</div>
+        <div class="report-meta"><span class="report-price">$14.99</span><span class="report-pages">45 pages · PDF</span><button class="report-btn">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="report-card">
+      <div class="report-cover" style="background:linear-gradient(135deg,rgba(3,218,198,.1),rgba(0,230,118,.08))">💰<div class="report-badge badge-trending">📈 TRENDING</div></div>
+      <div class="report-body">
+        <div class="report-category">Business Strategy</div>
+        <div class="report-title">SaaS Pricing Strategies: How Top Companies Charge & Win</div>
+        <div class="report-desc">28-page analysis of 200+ SaaS pricing models with frameworks, churn data, and revenue optimization tactics.</div>
+        <div class="report-meta"><span class="report-price">$9.99</span><span class="report-pages">28 pages · PDF</span><button class="report-btn">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="report-card">
+      <div class="report-cover" style="background:linear-gradient(135deg,rgba(244,113,176,.1),rgba(187,134,252,.08))">🏠<div class="report-badge badge-new">✨ NEW</div></div>
+      <div class="report-body">
+        <div class="report-category">Real Estate</div>
+        <div class="report-title">Real Estate Investment Trends 2026: Where Smart Money Is Moving</div>
+        <div class="report-desc">52-page report on emerging markets, interest rate impacts, rental yields by city, and AI-driven property tech.</div>
+        <div class="report-meta"><span class="report-price">$14.99</span><span class="report-pages">52 pages · PDF</span><button class="report-btn">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="report-card">
+      <div class="report-cover" style="background:linear-gradient(135deg,rgba(255,171,0,.1),rgba(255,109,0,.08))">🛒<div class="report-badge badge-hot">🔥 HOT</div></div>
+      <div class="report-body">
+        <div class="report-category">E-Commerce</div>
+        <div class="report-title">E-Commerce Competitive Analysis: Winning in a Crowded Market</div>
+        <div class="report-desc">32-page playbook covering platform comparisons, dropshipping vs. private label, customer acquisition costs by channel.</div>
+        <div class="report-meta"><span class="report-price">$7.99</span><span class="report-pages">32 pages · PDF</span><button class="report-btn">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="report-card">
+      <div class="report-cover" style="background:linear-gradient(135deg,rgba(0,230,118,.1),rgba(3,218,198,.08))">🤖</div>
+      <div class="report-body">
+        <div class="report-category">Automation</div>
+        <div class="report-title">Business Automation ROI: Calculate & Implement for Maximum Return</div>
+        <div class="report-desc">24-page guide with ROI calculators, implementation roadmaps, and case studies from 50+ automated businesses.</div>
+        <div class="report-meta"><span class="report-price">$5.99</span><span class="report-pages">24 pages · PDF + XLS</span><button class="report-btn">Buy Now</button></div>
+      </div>
+    </div>
+    <div class="report-card">
+      <div class="report-cover" style="background:linear-gradient(135deg,rgba(187,134,252,.1),rgba(3,218,198,.08))">📱<div class="report-badge badge-trending">📈 TRENDING</div></div>
+      <div class="report-body">
+        <div class="report-category">Social Media</div>
+        <div class="report-title">Social Media Algorithm Playbook 2026: Beat Every Platform</div>
+        <div class="report-desc">38-page breakdown of Instagram, TikTok, LinkedIn, X, and YouTube algorithms with growth tactics and posting formulas.</div>
+        <div class="report-meta"><span class="report-price">$9.99</span><span class="report-pages">38 pages · PDF</span><button class="report-btn">Buy Now</button></div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:2.5rem">
+    <button class="btn-primary">View All 2,400+ Reports →</button>
+  </div>
+</section>
+
+<section class="section" id="sell" style="background:var(--surface);max-width:100%;padding:5rem 2rem">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="section-label">// sell your reports</div>
+    <h2 class="section-title">Turn AI Into a<br>Report Revenue Machine</h2>
+    <p class="section-sub">Use our AI engine to generate, brand, and sell your own reports. Keep 80% of every sale. No inventory, no overhead, no limits.</p>
+    <div class="features-grid">
+      <div class="feat-card">
+        <div class="feat-icon" style="background:rgba(187,134,252,.12)">🤖</div>
+        <h3>AI Report Generator</h3>
+        <p>Enter a topic and your target buyer. Our AI writes a 20–60 page professional report with charts, data, and citations in minutes.</p>
+        <div class="feat-tag">GPT-4 POWERED</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon" style="background:rgba(3,218,198,.12)">🎨</div>
+        <h3>Professional PDF Formatting</h3>
+        <p>Reports auto-formatted with your branding, cover page, table of contents, and publisher-quality layout. Download-ready instantly.</p>
+        <div class="feat-tag">AUTO-FORMAT</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon" style="background:rgba(0,230,118,.12)">💳</div>
+        <h3>Instant Payment Processing</h3>
+        <p>Stripe-powered checkout with instant delivery link. Buyers get their PDF immediately. You get paid the same day.</p>
+        <div class="feat-tag">STRIPE PAYMENTS</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon" style="background:rgba(244,113,176,.12)">🔗</div>
+        <h3>Custom Sales Pages</h3>
+        <p>Auto-generated sales page for every report with persuasive copy, preview snippets, and social proof. No copywriting needed.</p>
+        <div class="feat-tag">AUTO-COPY</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon" style="background:rgba(255,171,0,.12)">📈</div>
+        <h3>Sales Analytics Dashboard</h3>
+        <p>Track views, conversions, and revenue per report. See which topics sell best and double down with data-driven decisions.</p>
+        <div class="feat-tag">ANALYTICS</div>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon" style="background:rgba(187,134,252,.12)">🌍</div>
+        <h3>Marketplace Distribution</h3>
+        <p>List your reports in our marketplace of 14K+ buyers. Get discovered by people already searching for exactly what you've made.</p>
+        <div class="feat-tag">14K+ BUYERS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="section-label">// workflow</div>
+  <h2 class="section-title">From Idea to Income in 4 Steps</h2>
+  <p class="section-sub">Generate your first sellable report in under 10 minutes. Then set up automatic publishing and let it run.</p>
+  <div class="pipeline">
+    <div class="pipe-step">
+      <div class="pipe-num">1</div>
+      <h4>Pick a Topic</h4>
+      <p>Enter any business, finance, or tech topic. AI suggests titles based on what's currently selling.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="pipe-num">2</div>
+      <h4>AI Writes It</h4>
+      <p>Full 20–60 page report generated with research, data, charts, and professional analysis in minutes.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="pipe-num">3</div>
+      <h4>Publish & Price</h4>
+      <p>Set your price ($5–$50), add to marketplace, get your shareable sales link instantly.</p>
+    </div>
+    <div class="pipe-step">
+      <div class="pipe-num">4</div>
+      <h4>Collect Payments</h4>
+      <p>Buyers pay, get instant PDF delivery. You receive 80% of every sale directly to your Stripe account.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing" style="background:var(--surface);max-width:100%;padding:5rem 2rem">
+  <div style="max-width:1200px;margin:0 auto">
+    <div class="section-label">// pricing</div>
+    <h2 class="section-title">Start Selling Reports Today</h2>
+    <p class="section-sub">Free to start. Upgrade to generate unlimited reports and keep 80% of revenue.</p>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="price-tier">Starter</div>
+        <div class="price-val"><sup>$</sup>0<span style="font-size:1rem;font-weight:400;color:var(--text2)">/mo</span></div>
+        <div class="price-desc">Test the concept before you commit</div>
+        <ul class="price-features">
+          <li>3 AI reports per month</li>
+          <li>Up to 20 pages per report</li>
+          <li>Marketplace listing</li>
+          <li>70% revenue share</li>
+          <li>Basic analytics</li>
+        </ul>
+        <button class="price-btn outline">Start Free →</button>
+      </div>
+      <div class="price-card featured">
+        <div class="popular-badge">✦ Best Seller</div>
+        <div class="price-tier">Publisher</div>
+        <div class="price-val"><sup>$</sup>29<span style="font-size:1rem;font-weight:400;color:var(--text2)">/mo</span></div>
+        <div class="price-desc">For serious report sellers</div>
+        <ul class="price-features">
+          <li>50 AI reports per month</li>
+          <li>Up to 60 pages per report</li>
+          <li>Custom branding & cover pages</li>
+          <li>80% revenue share</li>
+          <li>Auto-publish to marketplace</li>
+          <li>Advanced sales analytics</li>
+          <li>Custom sales page copy</li>
+        </ul>
+        <button class="price-btn">Get Publisher →</button>
+      </div>
+      <div class="price-card">
+        <div class="price-tier">Agency</div>
+        <div class="price-val"><sup>$</sup>99<span style="font-size:1rem;font-weight:400;color:var(--text2)">/mo</span></div>
+        <div class="price-desc">For agencies & power publishers</div>
+        <ul class="price-features">
+          <li>Unlimited AI reports</li>
+          <li>White-label storefront</li>
+          <li>Team access (5 seats)</li>
+          <li>85% revenue share</li>
+          <li>API access for automation</li>
+          <li>Priority report generation</li>
+          <li>Dedicated account manager</li>
+        </ul>
+        <button class="price-btn outline">Get Agency →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><div class="logo-icon">📊</div>AI Report Store</div>
+        <p>The fastest way to buy and sell AI-generated business reports. 2,400+ titles. Instant delivery. $5–$15 each. Start selling in minutes.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Buy Reports</h4>
+        <a href="#">Market Analysis</a>
+        <a href="#">Business Strategy</a>
+        <a href="#">Finance Reports</a>
+        <a href="#">Tech Trends</a>
+      </div>
+      <div class="footer-col">
+        <h4>Sell Reports</h4>
+        <a href="#">AI Generator</a>
+        <a href="#">Pricing Guide</a>
+        <a href="#">Seller Dashboard</a>
+        <a href="#">Affiliate Program</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="https://saikou.tech">Saikou.tech</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AI Report Store. All rights reserved.</span>
+      <span>Part of the <a href="https://saikou.tech" style="color:var(--primary);text-decoration:none">Saikou</a> platform</span>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
-```
